@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>
+            Employee Registration
+        </title>
+    </head>
+    <body>
+        <h1>Employee Registration</h1>
+        <form>
+            <fieldset>
+                <legend> Personal Information </legend>
+                <table>
+                    <tr>
+                        <td>Employee ID</td>
+                        <td>:&nbsp;</td>
+                        <td><input type="text" name="Employee Id" required placeholder="ID"></td>
+                    </tr>
+                    <tr>
+                        <td>Employee Name</td>
+                        <td>:&nbsp;</td>
+                        <td><input type="text" name=" Employee Name" required placeholder="Full Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Employee Email</td>
+                        <td>:&nbsp;</td>
+                        <td><input type="mail" name=" Employee Email" required placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td>Employee Contact No.</td>
+                        <td>:&nbsp;</td>
+                        <td><input type="number" name=" Employee Contact No." required pattern="[6789] [0-9]{9}" placeholder="Contact No."></td>
+                    </tr>
+                    <tr>
+                        <td>Employee Material Status</td>
+                        <td>:&nbsp;</td>
+                        <td><input type="radio" name="Material Status">Bachelour
+                            <input type="radio" name="Material Status">Married
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Education/Experience</legend>
+                <table>
+                    <tr>
+                        <td>Education</td>
+                        <td>:&nbsp;</td>
+                        <td>
+                            <select>
+                                <option>_____Select Your Education_____</option>
+                                <option>B.Tech C.E</option>
+                                <option>M.tech C.E</option>
+                                <option>PHD</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Experience</td>
+                        <td>:&nbsp;</td>
+                        <td><input type="number" name="" placeholder="Enter Your Experience" required pattern="[0-9]{3}"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Previous Job Detail</legend>
+                <table>
+                    <tr>
+                        <td>Designation</td>
+                        <td>:&nbsp;</td>
+                        <td><input type="text" name="" placeholder="Enter Your Designation" required></td>
+                    </tr>
+                    <tr>
+                        <td>Job Location</td>
+                        <td>:&nbsp;</td>
+                        <td><textarea rows="6" name="" placeholder="Enter Your Location" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Salary</td>
+                        <td>:&nbsp;</td>
+                        <td><input type="number" nmae="" placeholder="Enter Your Salary" required pattern="[0-9]"</td>
+                    </tr>
+                </table>
+            </fieldset>
+            <tr>
+                <td colspan="3" align="right">
+                <input type="button" name="" value="Register">
+                <input type="button" name="" value="Cancle">
+                </td>
+            </tr>
+        </form>
+    </body>
+</html>
